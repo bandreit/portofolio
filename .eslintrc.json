@@ -37,6 +37,12 @@
             "error",
             "always"
         ],
-        "prefer-const": "error"
+        "prefer-const": "error",
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        "react/require-default-props": "off",
+    },
+    "globals": {
+        "React": "writable"
     }
 }

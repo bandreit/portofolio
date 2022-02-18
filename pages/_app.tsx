@@ -1,0 +1,26 @@
+import { AppProps } from "next/app";
+import Router from "next/router";
+import NProgress from "nprogress";
+import { Header } from "components/layout";
+import fontTheme from "styles/font";
+import baseTheme from "styles/base";
+
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
+
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <>
+    <Header />
+    <Component {...pageProps} />
+
+    <style jsx global>
+      {fontTheme}
+    </style>
+    <style jsx global>
+      {baseTheme}
+    </style>
+  </>
+);
+
+export default MyApp;

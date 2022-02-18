@@ -1,0 +1,18 @@
+{
+  "short_name": "aibostan",
+  "name": "aibostan",
+  "lang": "en",
+  "description": "aibostan - Let's get it done",
+  "start_url": "https://aibostan.md",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/static/icon/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "prefer_related_applications": "false"
+}
