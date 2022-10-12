@@ -5,7 +5,7 @@ interface IHeroProps {}
 
 const Hero: React.FC<IHeroProps> = (props) => {
   return (
-    <section id="#home">
+    <section id="home">
       <div className="intro-section">
         <img className="background" src="/unsplash.jpg" alt="background" />
         <h1>
