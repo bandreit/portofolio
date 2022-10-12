@@ -2,28 +2,24 @@ import css from "styled-jsx/css";
 
 export default css.global`
   :root {
-    --color-primary-light: #857fd8;
-    --color-primary: #7871e3;
-    --color-primary-dark: #4f46db;
+    --max-width-content: 1600px;
+
+    --color-white: #FFF;
+
+    --color-primary-light: #ff4d00;
+    --color-primary: #cf3e00;
+    --color-primary-dark: #832801;
 
     --color-primary-100: #f4ecff;
     --color-primary-800: #292841;
 
     --color-secondary-light: #ffffff;
-    --color-secondary: #eff2f7;
+    --color-secondary: #FFE898;
     --color-secondary-dark: #cdd6e6;
 
     --color-tertiary-light: #e4b443;
     --color-tertiary: #ffbe3d;
     --color-tertiary-dark: #ffad0a;
-
-    --color-info-light: #83cbff;
-    --color-info: #50b5ff;
-    --color-info-dark: #1d9fff;
-
-    --color-success-light: #52d8a3;
-    --color-success: #2dca8c;
-    --color-success-dark: #24a06f;
 
     --color-dark-light: #3e3d5f;
     --color-dark: #2a2940;

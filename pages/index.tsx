@@ -1,15 +1,16 @@
-import Link from 'next/link'
-import { NextPage } from "next";
-import { Page } from 'components/layout'
+import { NextPage } from 'next'
+import { Page } from 'components/Layout'
+import Hero from 'components/Hero'
+import Technologies from 'components/TechnologiesSection'
+import Projects from 'components/ProjectsSection'
+import Contact from 'components/ContactSection'
 
 const IndexPage: NextPage = () => (
-  <Page title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
+  <Page>
+    <Hero />
+    <Technologies />
+    <Projects />
+    <Contact />
   </Page>
 )
 
