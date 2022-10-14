@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Project from 'components/Project'
-import { projects } from './projects'
+import { projects } from '../../data/projects'
 
 const ProjectsSection: React.FC = () => {
   return (

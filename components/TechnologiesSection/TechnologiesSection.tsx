@@ -14,7 +14,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
   }, [])
 
   return (
-    <section id="about">
+    <section id="about" className="about">
       <h1 className="section-title">
         Tech I use to build that cool stuff with
       </h1>
@@ -28,8 +28,15 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
         <Image src={'/logos/graphql.png'} width={100} height={100} />
       </div>
       <style jsx>{`
-        section {
+        .about {
           overflow: hidden;
+          margin-top: -3rem;
+        }
+
+        @media (max-width: 766.98px) {
+          .about {
+            margin-top: -8rem;
+          }
         }
 
         .section-title {
@@ -37,7 +44,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           color: var(--color-primary);
           font-size: 2rem;
           text-align: center;
-          transform: rotate(10deg) translateY(140px) translateX(50px);
+          transform: rotate(10deg) translateY(140px) translateX(1.2rem);
         }
 
         .technologies {
@@ -62,6 +69,9 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           .technologies {
             transform: rotate(10deg) translateY(8rem)
               translateX(${-1 * pageScrollY - 1000}px);
+            width: 100vh;
+            gap: 2rem;
+            padding: 1rem 0 15rem 0;
           }
         }
       `}</style>

@@ -1,6 +1,7 @@
 export const projects = [
   {
     link: 'https://github.com/grigorebudac/email-builder',
+    author: 'sep-group',
     title: 'klik-email-builder',
     languageLogo: '/logos/ts.png',
     body: 'Email builder app built for LEGO using the company\'s design tokens and Klik UI library (Bachelor Project)',
@@ -9,6 +10,7 @@ export const projects = [
   },
   {
     link: 'https://github.com/grigorebudac/sep-6',
+    author: 'bandreit',
     title: 'netflix-clone',
     languageLogo: '/logos/ts.png',
     body: 'Fully Serverless movie platform built in Next.js and AWS CloudFormation. Using the TMDb api',
@@ -17,6 +19,7 @@ export const projects = [
   },
   {
     link: 'https://github.com/bandreit/clockify-hourly-tracker',
+    author: 'bandreit',
     title: 'clockify-hourly-tracker',
     languageLogo: '/logos/ts.png',
     body: 'Utility for LEGO student workers to generate their monthly working hours report by using Clockify as a time tracker',
@@ -25,6 +28,7 @@ export const projects = [
   },
   {
     link: 'https://github.com/bandreit/socket-io',
+    author: 'bandreit',
     title: 'sync-youtube-player',
     languageLogo: '/logos/js.png',
     body: 'A website to allow watching youtube videos in parallel, by syncing the play/pause/skip actions along with a chat',
@@ -33,6 +37,7 @@ export const projects = [
   },
   {
     link: 'https://github.com/bandreit/and1-expense-tracker',
+    author: 'bandreit',
     title: 'and1-expense-tracker',
     languageLogo: '/logos/java.png',
     body: 'Android application build in Java to serve as an expense tracker with analytics functionality and budgeting',
@@ -41,6 +46,7 @@ export const projects = [
   },
   {
     link: 'https://github.com/grigorebudac/car-chase-game',
+    author: 'bandreit',
     title: 'car-chase-game',
     languageLogo: '/logos/csharp.png',
     body: 'Android application build in Java to serve as an expense tracker with analytics functionality and budgeting',

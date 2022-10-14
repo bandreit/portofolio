@@ -21,7 +21,7 @@ const Footer: React.FC<IFooterProps> = (prop) => {
       </div>
 
       <div className="madeWithLove">
-        {'Made with ❤️ by me :-)'}
+        {'Made by me :-)'}
         {` © ${new Date().getFullYear()} All rights reseved`}
       </div>
       <div className="address">

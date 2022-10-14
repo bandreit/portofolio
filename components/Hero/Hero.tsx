@@ -5,14 +5,10 @@ interface IHeroProps {}
 
 const Hero: React.FC<IHeroProps> = (props) => {
   return (
-    <section id="home">
+    <section id="home" className="home">
       <div className="intro-section">
         <img className="background" src="/unsplash.jpg" alt="background" />
-        <h1>
-          <span className="first-name">Andrei</span>
-          <br />
-          <span className="last-name">Bostan</span>
-        </h1>
+        <h1 className="first-name">Andrei Bostan</h1>
 
         <h2 className="description">
           Hello there, I'm a <span className="colored">Software Engineer</span>{' '}
@@ -23,7 +19,13 @@ const Hero: React.FC<IHeroProps> = (props) => {
       </div>
 
       <div className="image-section">
-        <Image src={'/profile-original.png'} width={1024} height={1024} />
+        <Image
+          src="/profile-original.png"
+          width={1024}
+          height={1024}
+          placeholder="blur"
+          blurDataURL="/profile-original.png"
+        />
       </div>
 
       <style jsx>{`
@@ -39,41 +41,30 @@ const Hero: React.FC<IHeroProps> = (props) => {
           z-index: -1;
         }
 
-        section {
-          height: 100vh;
-          max-height: 80vh;
+        .home {
           display: flex;
           justify-content: space-between;
+          align-items: center;
           max-width: var(--max-width-content);
           margin: 0 auto;
+        }
+
+        .intro-section {
+          padding: 0 5rem;
+        }
+
+        .first-name {
+          font-size: 8rem;
+          line-height: 8rem;
+          margin: 0;
         }
 
         .colored {
           color: var(--color-primary);
         }
 
-        .intro-section {
-          margin-top: 25vh;
-          padding: 0 5rem;
-        }
-
-        .first-name {
-          font-size: 8rem;
-          line-height: 1rem;
-        }
-
-        .last-name {
-          font-size: 6rem;
-        }
-
         h2 {
           font-weight: 500;
-        }
-
-        .image-section {
-          max-width: 62rem;
-          align-self: flex-end;
-          margin-bottom: -5rem;
         }
 
         button {
@@ -94,13 +85,15 @@ const Hero: React.FC<IHeroProps> = (props) => {
           color: var(--color-primary);
         }
 
-        @media (max-width: 766.98px) {
-          .intro-section {
-            top: 15vh;
-          }
+        .description {
+          font-size: 2rem;
+        }
 
-          section {
+        @media (max-width: 766.98px) {
+          .home {
             flex-direction: column;
+            overflow-x: hidden;
+            max-height: initial;
           }
 
           .intro-section {
@@ -108,17 +101,24 @@ const Hero: React.FC<IHeroProps> = (props) => {
             padding: 0 2rem;
           }
 
-          .first-name {
-            font-size: 4rem;
+          .image-section {
+            position: relative;
+            top: -6rem;
+            right: -6rem;
           }
 
-          .last-name {
-            font-size: 2rem;
+          .first-name {
+            font-size: 4rem;
+            line-height: 4rem;
           }
 
           .description {
             font-size: 1.5rem;
             font-weight: 400;
+          }
+
+          button {
+            font-size: 1rem;
           }
         }
       `}</style>

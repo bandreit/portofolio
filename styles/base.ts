@@ -14,7 +14,7 @@ export default css.global`
     --color-primary-800: #292841;
 
     --color-secondary-light: #ffffff;
-    --color-secondary: #FFE898;
+    --color-secondary: #ffc600;
     --color-secondary-dark: #cdd6e6;
 
     --color-tertiary-light: #e4b443;
