@@ -7,6 +7,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint": "^8.9.0",
@@ -14,7 +15,8 @@
     "next": "latest",
     "nprogress": "^0.2.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-intersection-observer": "^9.4.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.4.0",

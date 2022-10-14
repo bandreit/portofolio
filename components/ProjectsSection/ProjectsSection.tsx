@@ -8,7 +8,7 @@ const ProjectsSection: React.FC = () => {
       <h1 className="section-title">Projects I've been working on</h1>
       <section className="cards">
         {projects.map((project, i) => (
-          <Project {...project} key={i} />
+          <Project {...project} projectKey={i} key={i} />
         ))}
       </section>
       <style jsx>{`
@@ -31,6 +31,7 @@ const ProjectsSection: React.FC = () => {
         @media (max-width: 760px) {
           .cards {
             grid-template-columns: 1fr;
+            overflow: hidden;
           }
         }
       `}</style>

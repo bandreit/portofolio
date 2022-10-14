@@ -35,7 +35,7 @@ const Footer: React.FC<IFooterProps> = (prop) => {
           .footerContainer {
             max-width: var(--max-width-content);
             margin: 0 auto;
-            padding: 0 1rem;
+            padding: 0 1rem 0.2rem 1rem;
             height: 5rem;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -47,6 +47,8 @@ const Footer: React.FC<IFooterProps> = (prop) => {
           @media (max-width: 766.98px) {
             .footerContainer {
               grid-template-columns: repeat(1, 1fr);
+              height: 6rem;
+              margin-bottom: 1rem;
             }
 
             .iconsWrapper {

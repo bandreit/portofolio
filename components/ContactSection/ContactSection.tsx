@@ -1,11 +1,35 @@
 import Icon from 'components/Icons'
 import SocialMediaData from 'data/SocialMediaLinks'
 import Link from 'next/link'
-import * as React from 'react'
+import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 interface IContactProps {}
 
 const Contact: React.FC<IContactProps> = ({}) => {
+  const form = useRef()
+  const [buttonText, setButtonText] = useState('SUBMIT')
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    setButtonText('Sending...')
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAIL_JS_API_KEY
+      )
+      .then(
+        (result) => {
+          setButtonText("I'll get in touch!")
+        },
+        (error) => {
+          setButtonText("Uh-oh, this didn't work :(")
+        }
+      )
+  }
   return (
     <section id="contact">
       <h1 className="section-title">Let's jam</h1>
@@ -26,25 +50,25 @@ const Contact: React.FC<IContactProps> = ({}) => {
         ))}
       </div>
 
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <input
-          name="name"
+          name="from_name"
           type="text"
           className="feedback-input"
           placeholder="Name"
         />
         <input
-          name="email"
+          name="reply_to"
           type="text"
           className="feedback-input"
           placeholder="Email"
         />
         <textarea
-          name="text"
+          name="message"
           className="feedback-input"
           placeholder="Comment"
         ></textarea>
-        <input type="submit" value="SUBMIT" />
+        <input type="submit" value={buttonText} />
       </form>
       <style jsx>
         {`

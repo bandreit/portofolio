@@ -19,13 +19,55 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
         Tech I use to build that cool stuff with
       </h1>
       <div className="technologies">
-        <Image src={'/logos/serverless.png'} width={100} height={100} />
-        <Image src={'/logos/aws.png'} width={180} height={100} />
-        <Image src={'/logos/react.png'} width={120} height={100} />
-        <Image src={'/logos/ts.png'} width={100} height={100} />
-        <Image src={'/logos/next.png'} width={180} height={100} />
-        <Image src={'/logos/rest.png'} width={200} height={100} />
-        <Image src={'/logos/graphql.png'} width={100} height={100} />
+        <Image
+          src={'/logos/serverless.png'}
+          width={100}
+          height={100}
+          placeholder="blur"
+          blurDataURL={'/logos/serverless.png'}
+        />
+        <Image
+          src={'/logos/aws.png'}
+          width={180}
+          height={100}
+          placeholder="blur"
+          blurDataURL={'/logos/aws.png'}
+        />
+        <Image
+          src={'/logos/react.png'}
+          width={120}
+          height={100}
+          placeholder="blur"
+          blurDataURL={'/logos/react.png'}
+        />
+        <Image
+          src={'/logos/ts.png'}
+          width={100}
+          height={100}
+          placeholder="blur"
+          blurDataURL={'/logos/ts.png'}
+        />
+        <Image
+          src={'/logos/next.png'}
+          width={180}
+          height={100}
+          placeholder="blur"
+          blurDataURL={'/logos/next.png'}
+        />
+        <Image
+          src={'/logos/rest.png'}
+          width={200}
+          height={100}
+          placeholder="blur"
+          blurDataURL={'/logos/rest.png'}
+        />
+        <Image
+          src={'/logos/graphql.png'}
+          width={100}
+          height={100}
+          placeholder="blur"
+          blurDataURL={'/logos/graphql.png'}
+        />
       </div>
       <style jsx>{`
         .about {
@@ -50,7 +92,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           justify-content: center;
           align-items: center;
           gap: 5rem;
-          transform: rotate(10deg) translateX(${-1 * pageScrollY}px);
+          transform: rotate(10deg) translateX(${-1 * pageScrollY - 400}px);
           width: 200vh;
         }
 
@@ -62,7 +104,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
         @media (max-width: 425px) {
           .technologies {
             transform: rotate(10deg) translateY(8rem)
-              translateX(${-1 * pageScrollY - 1000}px);
+              translateX(${-1 * pageScrollY - 800}px);
             width: 100vh;
             gap: 2rem;
             padding: 1rem 0 15rem 0;

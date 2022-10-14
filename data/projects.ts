@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     link: 'https://github.com/grigorebudac/sep-6',
-    author: 'bandreit',
+    author: 'sep-group',
     title: 'netflix-clone',
     languageLogo: '/logos/ts.png',
     body: 'Fully Serverless movie platform built in Next.js and AWS CloudFormation. Using the TMDb api',
@@ -46,7 +46,7 @@ export const projects = [
   },
   {
     link: 'https://github.com/grigorebudac/car-chase-game',
-    author: 'bandreit',
+    author: 'sep-group',
     title: 'car-chase-game',
     languageLogo: '/logos/csharp.png',
     body: 'Android application build in Java to serve as an expense tracker with analytics functionality and budgeting',
