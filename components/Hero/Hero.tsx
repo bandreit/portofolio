@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface IHeroProps {}
 
@@ -15,7 +16,9 @@ const Hero: React.FC<IHeroProps> = (props) => {
           - I do some cool things with my 💻
         </h2>
 
-        <button> Say hi! {` `} 👋 </button>
+        <Link href="#contact">
+          <button>Say hi! {` `} 👋</button>
+        </Link>
       </div>
 
       <div className="image-section">

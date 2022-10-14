@@ -33,12 +33,6 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           margin-top: -3rem;
         }
 
-        @media (max-width: 766.98px) {
-          .about {
-            margin-top: -8rem;
-          }
-        }
-
         .section-title {
           margin-top: 5rem;
           color: var(--color-primary);
@@ -72,6 +66,12 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
             width: 100vh;
             gap: 2rem;
             padding: 1rem 0 15rem 0;
+          }
+        }
+
+        @media (max-width: 766.98px) {
+          .about {
+            margin-top: -16rem;
           }
         }
       `}</style>
