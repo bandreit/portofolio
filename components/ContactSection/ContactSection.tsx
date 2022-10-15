@@ -135,6 +135,12 @@ const Contact: React.FC<IContactProps> = ({}) => {
             justify-content: flex-end;
           }
 
+          input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
           [type='submit'] {
             padding: 0.8rem 2rem;
             font-size: 1rem;
