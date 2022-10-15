@@ -49,7 +49,7 @@ export const projects = [
     author: 'sep-group',
     title: 'car-chase-game',
     languageLogo: '/logos/csharp.png',
-    body: 'Infinite car chase game built for our Game Develpoment course',
+    body: 'Infinite car chase game built for our Game Development course',
     technologies: ['Unity', 'C#'],
     shadow_color: '#592C8D'
   },
