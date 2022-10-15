@@ -73,7 +73,7 @@ const Hero: React.FC<IHeroProps> = (props) => {
         }
 
         button {
-          padding: 1rem 1.5rem;
+          padding: 0.8rem 1rem;
           font-size: 1.5rem;
           transition-duration: 0.2s;
           cursor: pointer;
@@ -94,6 +94,7 @@ const Hero: React.FC<IHeroProps> = (props) => {
         }
 
         .buttonImageWrapper {
+          font-size: 1.3rem;
           display: flex;
           gap: 5px;
           align-items: center;

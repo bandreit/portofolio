@@ -16,21 +16,21 @@ const Contact: React.FC<IContactProps> = ({}) => {
 
     console.log(e.value)
 
-    // emailjs
-    //   .sendForm(
-    //     process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,
-    //     process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE,
-    //     form.current,
-    //     process.env.NEXT_PUBLIC_EMAIL_JS_API_KEY
-    //   )
-    //   .then(
-    //     (result) => {
-    //       setButtonText("I'll get in touch!")
-    //     },
-    //     (error) => {
-    //       setButtonText("Uh-oh, this didn't work :(")
-    //     }
-    //   )
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAIL_JS_API_KEY
+      )
+      .then(
+        (result) => {
+          setButtonText("I'll get in touch!")
+        },
+        (error) => {
+          setButtonText("Uh-oh, this didn't work :(")
+        }
+      )
   }
   return (
     <section id="contact">
@@ -115,6 +115,7 @@ const Contact: React.FC<IContactProps> = ({}) => {
             margin-bottom: 15px;
             width: 100%;
             box-sizing: border-box;
+            border-radius: 0px;
             outline: 0;
           }
 
@@ -141,12 +142,14 @@ const Contact: React.FC<IContactProps> = ({}) => {
             cursor: pointer;
             border: 5px solid black;
             font-weight: bold;
+            border-radius: 0px;
             border-color: var(--color-secondary);
             background-color: var(--color-primary);
             color: var(--color-secondary);
           }
 
           [type='submit']:hover {
+            border-radius: 0px;
             background-color: var(--color-secondary);
             color: var(--color-primary);
           }

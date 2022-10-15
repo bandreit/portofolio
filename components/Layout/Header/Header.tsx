@@ -100,7 +100,7 @@ const Header: React.FC<IHeaderProps> = (props) => {
         }
 
         .blur {
-          backdrop-filter: blur(5px);
+          backdrop-filter: blur(10px);
         }
 
         ul {
