@@ -10,7 +10,7 @@ const Header: React.FC<IHeaderProps> = (props) => {
 
   return (
     <header>
-      <nav>
+      <nav className="blur">
         <div
           style={{
             borderRadius: '50%',
@@ -97,6 +97,10 @@ const Header: React.FC<IHeaderProps> = (props) => {
           display: flex;
           justify-content: space-between;
           padding: 1rem 1.5rem;
+        }
+
+        .blur {
+          backdrop-filter: blur(5px);
         }
 
         ul {

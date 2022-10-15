@@ -42,14 +42,14 @@ export const projects = [
     languageLogo: '/logos/java.png',
     body: 'Android application build in Java to serve as an expense tracker with analytics functionality and budgeting',
     technologies: ['Java', 'Android'],
-    shadow_color: '#ff3c1f'
+    shadow_color: '#dc6756'
   },
   {
     link: 'https://github.com/grigorebudac/car-chase-game',
     author: 'sep-group',
     title: 'car-chase-game',
     languageLogo: '/logos/csharp.png',
-    body: 'Android application build in Java to serve as an expense tracker with analytics functionality and budgeting',
+    body: 'Infinite car chase game built for our Game Develpoment course',
     technologies: ['Unity', 'C#'],
     shadow_color: '#592C8D'
   },

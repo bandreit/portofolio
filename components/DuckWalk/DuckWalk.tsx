@@ -32,8 +32,8 @@ const DuckWalk = () => {
 
         .duck {
           width: 40px;
-          transform: translateX(${(y * 1.3) % windowInnerWidth}px)
-            rotateZ(${(Math.floor(y / 10) % 10) - 5}deg) scaleX(-1);
+          transform: translateX(${(y * 0.3) % windowInnerWidth}px)
+            rotateZ(${(Math.floor(y / 20) % 10) - 5}deg) scaleX(-1);
         }
       `}</style>
     </div>

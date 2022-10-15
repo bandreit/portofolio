@@ -9,15 +9,10 @@ const Footer: React.FC<IFooterProps> = (prop) => {
   return (
     <footer className="footerContainer">
       <div className="iconsWrapper">
-        {SocialMediaData.map((value, index) => (
-          <Link href={value.link} key={index}>
-            <a target="_blank" rel="noreferrer">
-              <div>
-                <Icon id={value.title} width={27} height={27} filled={false} />
-              </div>
-            </a>
-          </Link>
-        ))}
+        This website is open hosted on{' '}
+        <Link href="https://github.com/bandreit/portofolio">
+          <span className="email">GitHub</span>
+        </Link>
       </div>
 
       <div className="madeWithLove">
@@ -56,17 +51,13 @@ const Footer: React.FC<IFooterProps> = (prop) => {
             }
           }
 
-          .iconsWrapper {
-            display: flex;
-            gap: 0.4rem;
-          }
-
           .address {
             text-align: end;
           }
 
           .email {
-            color: blue;
+            color: var(--color-primary);
+            cursor: pointer;
           }
         `}
       </style>

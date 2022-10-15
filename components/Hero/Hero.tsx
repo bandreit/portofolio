@@ -17,7 +17,9 @@ const Hero: React.FC<IHeroProps> = (props) => {
         </h2>
 
         <Link href="#contact">
-          <button>Say hi! {` `} 👋</button>
+          <button className="buttonImageWrapper">
+            Say hi! {` `} <Image src="/hand.png" height={30} width={30}></Image>
+          </button>
         </Link>
       </div>
 
@@ -76,9 +78,8 @@ const Hero: React.FC<IHeroProps> = (props) => {
           transition-duration: 0.2s;
           cursor: pointer;
           border: 5px solid black;
-          border-radius: 5px;
           border-color: var(--color-secondary);
-          border-radius: 8px;
+          border-radius: 0;
           background-color: var(--color-primary);
           color: var(--color-secondary);
         }
@@ -90,6 +91,12 @@ const Hero: React.FC<IHeroProps> = (props) => {
 
         .description {
           font-size: 2rem;
+        }
+
+        .buttonImageWrapper {
+          display: flex;
+          gap: 5px;
+          align-items: center;
         }
 
         @media (max-width: 766.98px) {

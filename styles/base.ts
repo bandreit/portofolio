@@ -6,15 +6,15 @@ export default css.global`
 
     --color-white: #FFF;
 
-    --color-primary-light: #ff4d00;
-    --color-primary: #cf3e00;
+    --color-primary-light: #6d8975;
+    --color-primary: #629A95;
     --color-primary-dark: #832801;
 
     --color-primary-100: #f4ecff;
     --color-primary-800: #292841;
 
     --color-secondary-light: #ffffff;
-    --color-secondary: #ffc600;
+    --color-secondary: #ddf1f0;
     --color-secondary-dark: #cdd6e6;
 
     --color-tertiary-light: #e4b443;

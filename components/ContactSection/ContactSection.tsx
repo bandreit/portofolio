@@ -8,27 +8,29 @@ interface IContactProps {}
 
 const Contact: React.FC<IContactProps> = ({}) => {
   const form = useRef()
-  const [buttonText, setButtonText] = useState('SUBMIT')
+  const [buttonText, setButtonText] = useState('Send')
 
   const sendEmail = (e) => {
     e.preventDefault()
     setButtonText('Sending...')
 
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,
-        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE,
-        form.current,
-        process.env.NEXT_PUBLIC_EMAIL_JS_API_KEY
-      )
-      .then(
-        (result) => {
-          setButtonText("I'll get in touch!")
-        },
-        (error) => {
-          setButtonText("Uh-oh, this didn't work :(")
-        }
-      )
+    console.log(e.value)
+
+    // emailjs
+    //   .sendForm(
+    //     process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,
+    //     process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE,
+    //     form.current,
+    //     process.env.NEXT_PUBLIC_EMAIL_JS_API_KEY
+    //   )
+    //   .then(
+    //     (result) => {
+    //       setButtonText("I'll get in touch!")
+    //     },
+    //     (error) => {
+    //       setButtonText("Uh-oh, this didn't work :(")
+    //     }
+    //   )
   }
   return (
     <section id="contact">
@@ -56,24 +58,29 @@ const Contact: React.FC<IContactProps> = ({}) => {
           type="text"
           className="feedback-input"
           placeholder="Name"
+          required
         />
         <input
           name="reply_to"
           type="text"
           className="feedback-input"
           placeholder="Email"
+          required
         />
         <textarea
           name="message"
           className="feedback-input"
           placeholder="Comment"
+          required
         ></textarea>
-        <input type="submit" value={buttonText} />
+        <div className="submitWrapper">
+          <input type="submit" value={buttonText} />
+        </div>
       </form>
       <style jsx>
         {`
           section {
-            max-width: 40rem;
+            max-width: 35rem;
             margin: 0 auto;
             padding: 1rem;
           }
@@ -100,7 +107,6 @@ const Contact: React.FC<IContactProps> = ({}) => {
             color: black;
             font-family: Helvetica, Arial, sans-serif;
             font-size: 18px;
-            border-radius: 5px;
             line-height: 22px;
             background-color: transparent;
             border: 2px solid var(--color-primary);
@@ -113,7 +119,7 @@ const Contact: React.FC<IContactProps> = ({}) => {
           }
 
           .feedback-input:focus {
-            border: 2px solid #cc4949;
+            border: 2px solid var(--color-primary-light);
           }
 
           textarea {
@@ -122,19 +128,24 @@ const Contact: React.FC<IContactProps> = ({}) => {
             resize: vertical;
           }
 
+          .submitWrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+          }
+
           [type='submit'] {
-            width: 100%;
-            padding: 1rem 1.5rem;
-            font-size: 1.5rem;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
             transition-duration: 0.2s;
             cursor: pointer;
             border: 5px solid black;
-            border-radius: 5px;
+            font-weight: bold;
             border-color: var(--color-secondary);
-            border-radius: 8px;
             background-color: var(--color-primary);
             color: var(--color-secondary);
           }
+
           [type='submit']:hover {
             background-color: var(--color-secondary);
             color: var(--color-primary);
