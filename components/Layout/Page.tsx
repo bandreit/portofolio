@@ -21,7 +21,7 @@ interface PageProps {
 
 const Page: React.FC<PageProps> = ({
   title,
-  description = 'aibostan.com - Software Engineer.',
+  description = 'abostan.com - Software Engineer.',
   keywords = [],
   seo = true,
   footer = true,

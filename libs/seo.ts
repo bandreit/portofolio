@@ -1,6 +1,7 @@
 export const __seo__keywords = [
   "Andrei Bostan",
-  "LEGO",
+  "Andrei Iulian Bostan",
+  "abostan.com",
   "Full Stack Developer",
   "Web Developer",
   "Software Engineer",
