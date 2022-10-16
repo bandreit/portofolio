@@ -96,7 +96,7 @@ const Hero: React.FC<IHeroProps> = (props) => {
         }
 
         @media (max-width: 766.98px) {
-          .home {
+          .wrapper {
             flex-direction: column;
             overflow-x: hidden;
             max-height: initial;
