@@ -143,7 +143,7 @@ const Contact: React.FC<IContactProps> = ({}) => {
 
           [type='submit'] {
             padding: 0.8rem 2rem;
-            font-size: 1rem;
+            font-size: 1.1rem;
             transition-duration: 0.2s;
             cursor: pointer;
             border: 5px solid black;

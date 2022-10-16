@@ -25,6 +25,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           height={100}
           placeholder="blur"
           blurDataURL={'/logos/serverless.png'}
+          alt="serverless"
         />
         <Image
           src={'/logos/aws.png'}
@@ -32,6 +33,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           height={100}
           placeholder="blur"
           blurDataURL={'/logos/aws.png'}
+          alt="aws"
         />
         <Image
           src={'/logos/react.png'}
@@ -39,6 +41,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           height={100}
           placeholder="blur"
           blurDataURL={'/logos/react.png'}
+          alt="react"
         />
         <Image
           src={'/logos/ts.png'}
@@ -46,6 +49,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           height={100}
           placeholder="blur"
           blurDataURL={'/logos/ts.png'}
+          alt="ts"
         />
         <Image
           src={'/logos/next.png'}
@@ -53,6 +57,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           height={100}
           placeholder="blur"
           blurDataURL={'/logos/next.png'}
+          alt="next"
         />
         <Image
           src={'/logos/rest.png'}
@@ -60,6 +65,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           height={100}
           placeholder="blur"
           blurDataURL={'/logos/rest.png'}
+          alt="rest"
         />
         <Image
           src={'/logos/graphql.png'}
@@ -67,6 +73,7 @@ const TechnologiesSection: React.FC<ITechnologiesProps> = (props) => {
           height={100}
           placeholder="blur"
           blurDataURL={'/logos/graphql.png'}
+          alt="graphql"
         />
       </div>
       <style jsx>{`

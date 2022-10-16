@@ -30,6 +30,7 @@ const Page: React.FC<PageProps> = ({
   return (
     <>
       <Head>
+        <link rel="icon" type="image/png" href="/profile-original.png" />
         <title>
           {title
             ? `${title} – Andrei Bostan`

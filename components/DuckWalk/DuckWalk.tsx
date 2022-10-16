@@ -21,7 +21,7 @@ const DuckWalk = () => {
   return (
     <div className="container">
       <div className="duck">
-        <Image width="40px" height="40px" src="/duck.png" />
+        <Image width="40px" height="40px" src="/duck.png" alt="duck" />
       </div>
       <style jsx>{`
         .container {

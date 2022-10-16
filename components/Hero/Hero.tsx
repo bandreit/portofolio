@@ -20,7 +20,7 @@ const Hero: React.FC<IHeroProps> = (props) => {
           <Link href="#contact">
             <button className="buttonImageWrapper">
               Say hi! {` `}{' '}
-              <Image src="/hand.png" height={30} width={30}></Image>
+              <Image src="/hand.png" height={30} width={30} alt="hand"></Image>
             </button>
           </Link>
         </div>

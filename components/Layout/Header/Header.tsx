@@ -20,10 +20,11 @@ const Header: React.FC<IHeaderProps> = (props) => {
           }}
         >
           <Image
-            src={'/profile-pic.jpg'}
+            src={'/profile-original.png'}
             objectFit="cover"
             width="50px"
             height="50px"
+            alt="logo"
           />
         </div>
 

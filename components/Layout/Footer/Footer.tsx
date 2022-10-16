@@ -39,6 +39,16 @@ const Footer: React.FC<IFooterProps> = (prop) => {
             place-items: center;
           }
 
+          .address {
+            text-align: end;
+          }
+
+          .email {
+            color: var(--color-primary);
+            cursor: pointer;
+            font-weight: 700;
+          }
+
           @media (max-width: 766.98px) {
             .footerContainer {
               grid-template-columns: repeat(1, 1fr);
@@ -49,15 +59,10 @@ const Footer: React.FC<IFooterProps> = (prop) => {
             .iconsWrapper {
               order: -1;
             }
-          }
 
-          .address {
-            text-align: end;
-          }
-
-          .email {
-            color: var(--color-primary);
-            cursor: pointer;
+            .address {
+              order: -1;
+            }
           }
         `}
       </style>

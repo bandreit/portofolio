@@ -33,7 +33,7 @@ const Projects: React.FC<IProjectsProps> = ({
             {author} / <b>{title}</b>
           </p>
           <span className="logo">
-            <Image src={languageLogo} width={35} height={35} />
+            <Image src={languageLogo} width={35} height={35} alt="logo" />
           </span>
         </section>
         <section className="body">{body}</section>
