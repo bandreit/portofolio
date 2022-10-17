@@ -1,5 +1,3 @@
-import Icon from 'components/Icons'
-import SocialMediaData from 'data/SocialMediaLinks'
 import Link from 'next/link'
 import * as React from 'react'
 

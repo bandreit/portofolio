@@ -20,7 +20,7 @@ const Header: React.FC<IHeaderProps> = (props) => {
           }}
         >
           <Image
-            src={'/profile-original.png'}
+            src={'/profile-original.webp'}
             objectFit="cover"
             width="50px"
             height="50px"
@@ -33,6 +33,7 @@ const Header: React.FC<IHeaderProps> = (props) => {
             <button
               className={'mobileNavButton'}
               onClick={() => setMovileNavActive(!isMovileNavActive)}
+              name="contact me"
             ></button>
           </li>
           <li className="notOnMobile">

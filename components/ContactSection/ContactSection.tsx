@@ -38,7 +38,7 @@ const Contact: React.FC<IContactProps> = ({}) => {
       <div className="iconsWrapper">
         {SocialMediaData.map((value, index) => (
           <Link href={value.link} key={index}>
-            <a target="_blank" rel="noreferrer">
+            <a target="_blank" rel="noreferrer" aria-label={value.title}>
               <div>
                 <Icon
                   id={value.title + 'Filled'}

@@ -17,21 +17,42 @@ const Hero: React.FC<IHeroProps> = (props) => {
             things with my 💻
           </h2>
 
-          <Link href="#contact">
-            <button className="buttonImageWrapper">
-              Say hi! {` `}{' '}
-              <Image src="/hand.png" height={30} width={30} alt="hand"></Image>
-            </button>
-          </Link>
+          <div className="buttonsWrapper">
+            <Link href="#contact">
+              <button
+                className="buttonImageWrapper hideOnMobile"
+                name="contact me"
+              >
+                Say hi! {` `}{' '}
+                <Image
+                  src="/hand.png"
+                  height={23}
+                  width={23}
+                  alt="hand"
+                ></Image>
+              </button>
+            </Link>
+
+            <a
+              target="_blank"
+              href="/Andrei Bostan - CV.pdf"
+              rel="Andrei Bostan CV"
+            >
+              <button className="buttonImageWrapper" name="contact me">
+                Resume
+              </button>
+            </a>
+          </div>
         </div>
 
         <div className="image-section">
           <Image
-            src="/profile-original.png"
+            src="/profile-original.webp"
             width={1024}
             height={1024}
             placeholder="blur"
-            blurDataURL="/profile-original.png"
+            blurDataURL="/profile-original.webp"
+            alt="profile picture"
           />
         </div>
       </div>
@@ -49,6 +70,13 @@ const Hero: React.FC<IHeroProps> = (props) => {
           align-items: center;
           margin: 0 auto;
         }
+
+        .buttonsWrapper {
+          display: flex;
+          gap: 1rem;
+          z-index: 2;
+        }
+
         .intro-section {
           padding: 0 5rem;
         }
@@ -93,6 +121,7 @@ const Hero: React.FC<IHeroProps> = (props) => {
           display: flex;
           gap: 5px;
           align-items: center;
+          z-index: 10;
         }
 
         @media (max-width: 766.98px) {
@@ -100,6 +129,10 @@ const Hero: React.FC<IHeroProps> = (props) => {
             flex-direction: column;
             overflow-x: hidden;
             max-height: initial;
+          }
+
+          .hideOnMobile {
+            display: none;
           }
 
           .intro-section {
@@ -111,6 +144,7 @@ const Hero: React.FC<IHeroProps> = (props) => {
             position: relative;
             top: -6rem;
             right: -6rem;
+            z-index: 0;
           }
 
           .first-name {
