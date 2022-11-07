@@ -14,8 +14,6 @@ const Contact: React.FC<IContactProps> = ({}) => {
     e.preventDefault()
     setButtonText('Sending...')
 
-    console.log(e.value)
-
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,

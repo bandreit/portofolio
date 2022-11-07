@@ -37,6 +37,9 @@ const Hero: React.FC<IHeroProps> = (props) => {
               target="_blank"
               href="/Andrei Bostan - CV.pdf"
               rel="Andrei Bostan CV"
+              data-goatcounter-click="Download CV"
+              data-goatcounter-title="CV Download"
+              data-goatcounter-referrer="portfolio"
             >
               <button className="buttonImageWrapper" name="contact me">
                 Resume
