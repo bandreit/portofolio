@@ -36,7 +36,12 @@ const Contact: React.FC<IContactProps> = ({}) => {
       <div className="iconsWrapper">
         {SocialMediaData.map((value, index) => (
           <Link href={value.link} key={index}>
-            <a target="_blank" rel="noreferrer" aria-label={value.title}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              data-goatcounter-click={value.title}
+              aria-label={value.title}
+            >
               <div>
                 <Icon
                   id={value.title + 'Filled'}
@@ -72,7 +77,11 @@ const Contact: React.FC<IContactProps> = ({}) => {
           required
         ></textarea>
         <div className="submitWrapper">
-          <input type="submit" value={buttonText} />
+          <input
+            type="submit"
+            value={buttonText}
+            data-goatcounter-click="Contact Me!"
+          />
         </div>
       </form>
       <style jsx>
